@@ -27,18 +27,8 @@ SECRET_KEY = 'n1a!#!hss%o5k&bvng4zxhfj=dz_dijzdojy!-)va(lf4hx@u7'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.8.100',
-    '192.168.8.101',
-    '192.168.8.102',
-    '192.168.8.103',
-    '192.168.8.104',
-    '192.168.8.105',
-    '192.168.8.106',
-    '192.168.8.107',
-    '192.168.8.108',
-    'localhost',
+    'kabayansohar.pythonanywhere.com',
 ]
-
 
 # Application definition
 
