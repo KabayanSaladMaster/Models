@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'kabayansohar.pythonanywhere.com',
+    'localhost',
 ]
 
 # Application definition
@@ -124,7 +125,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIR = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'assets'),
+    os.path.join(BASE_DIR, 'assets/Home'),
+    os.path.join(BASE_DIR, 'assets/Frozen'),
+    os.path.join(BASE_DIR, 'assets/NonFrozen'),
+
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
