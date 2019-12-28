@@ -7,4 +7,4 @@ def Home(request):
     PageData = {
         'title':title,
     }
-    return render(request, 'Home/Page/homepage.html', PageData)
+    return render(request, 'Home/homepage.html', PageData)
