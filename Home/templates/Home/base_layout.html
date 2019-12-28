@@ -1,16 +1,19 @@
+{% load static %}
 <html>
     <head>
         {% block headTag %}
         {% endblock %}
-        <link rel="stylesheet" type="text/css" href="static/Home/animate.css">
-        <link rel='stylesheet' type='text/css' href='static/Home/Boostrap441/css/bootstrap.css'>
+        <link rel="stylesheet" type="text/css" href="{% static '/animate.css' %}">
+        <link rel='stylesheet' type='text/css' href="{% static '/Boostrap441/css/bootstrap.css' %}">
     </head>
-        {% block BodyContent %}
-        {% endblock %}
+    {% block BodyContent %}
 
-        {% block HtmlStyle %}
+    {% endblock %}
+    <style>
+        {% block CssStyles %}
         {% endblock %}
-    <script type="text/javascript" src="static/Home/Boostrap441/js/popper.min.js"></script>
-    <script type='text/javascript' src='static/Home/Boostrap441/js/jquery-3.4.1.min.js'></script>
-    <script type='text/javascript' src='static/Home/Boostrap441/js/bootstrap.min.js'></script>
+    </style>
+    <script type="text/javascript" src="{% static '/Boostrap441/js/popper.min.js' %}"></script>
+    <script type='text/javascript' src="{% static '/Boostrap441/js/jquery-3.4.1.min.js' %}"></script>
+    <script type='text/javascript' src="{% static '/Boostrap441/js/bootstrap.min.js' %}"></script>
 </html>
