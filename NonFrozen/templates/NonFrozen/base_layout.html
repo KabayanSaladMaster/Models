@@ -1,14 +1,19 @@
 <html>
     <head>
-        {% block headTag %}
-        {% endblock %}
-        <link rel='stylesheet' type='text/css' href='static/Home/Boostrap441/css/bootstrap.css' />
+        {% block TabTitle %}{% endblock %}
+        <link rel="stylesheet" type="text/css" href="/static/Home/animate.css"> 
+        <link rel='stylesheet' type='text/css' href='/static/Home/Boostrap441/css/bootstrap.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         {% block BodyContent %}
         {% endblock %}
     </body>
-    <script type="text/javascript" src="static/Home/Boostrap441/js/popper.min.js"></script>
-    <script type='text/javascript' src='static/Home/Boostrap441/js/jquery-3.4.1.min.js'></script>
-    <script type='text/javascript' src='static/Home/Boostrap441/js/bootstrap.min.js'></script>
+    <style>
+        {% block CssStyle %}
+        {% endblock %}
+    </style>
+    <script type="text/javascript" src="/static/Home/Boostrap441/js/popper.min.js"></script>
+    <script type='text/javascript' src='/static/Home/Boostrap441/js/jquery-3.4.1.min.js'></script>
+    <script type='text/javascript' src='/static/Home/Boostrap441/js/bootstrap.min.js'></script>
 </html>

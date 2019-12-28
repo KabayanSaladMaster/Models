@@ -1,7 +1,33 @@
 {% extends 'Frozen/base_layout.html' %}
 
+{% block TabTitle %}<title>{{title}}</title>{% endblock %}
+
+{% block CssStyle %}
+.item-tag-price::before {
+    content:'RO: ';
+
+}
+.item-tag-quantity::before {
+    content: 'Available: '
+}
+.item-tag-quantity::after {
+    content: ' pcs'
+}
+{% endblock %}
 
 {% block BodyContent %}
-<p class='text-center text-primary'>Hello Ajcob</p>
-<p class='text-primary text-center'>HEllo 2</p>
+<div class='container-fluid row justify-content-center' style="background-color: lightcyan;">
+    {% for items in product %}
+    {% if items.Quantity > 0 %}
+    <div class='card border-dark m-4 animated zoomIn'>
+        <h3 class='card-header text-center font-weight-bold'>{{items.PName}}</h3>
+        <img src="{{items.Thumb.url}}" class='card-img top img-thumbnail card-img-top rounded mx-auto d-block'>
+        <div class='card-footer text-center'>
+            <p class='card-text item-tag-price font-weight-bold'>{{items.Price}}</p>
+            <p class='card-text item-tag-quantity font-weight-bold'>{{items.Quantity}}</p>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endblock %}
