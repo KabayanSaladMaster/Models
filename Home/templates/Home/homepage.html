@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel='stylesheet' type='text/css' href="{% static 'Home/Boostrap441/css/bootstrap.css' %}">
     </head>
-    <body class='d-flex flex-sm-column flex-lg-row flex-fill flex-wrap bg-lightblue'>
-        <button onclick="window.location.href='{% url "Frozen:Home" %}';" class='d-flex justify-content-center flex-fill bg-dark p-5 m-5 shadow btn animated zoomIn'>
-            <p class='display-4 align-self-center text-wrap text-white font-weight-bolder'>FrozenFoods</p>
+    <body class='d-flex flex-sm-column flex-md-column flex-lg-column flex-xl-column flex-wrap bg-lightblue container-fluid p-5'>
+        <button onclick="window.location.href='{% url "Frozen:Home" %}';" class='d-flex justify-content-center flex-fill bg-dark p-1 m-1 shadow btn animated zoomIn'>
+            <p class='align-self-center text-wrap text-white font-weight-bolder' style='font-size: 4vw;'>FrozenFoods</p>
         </button>
-        <button onclick="window.location.href='{% url "NonFrozen:Home" %}';" class='d-flex justify-content-center flex-fill bg-light p-5 m-5 shadow btn animated zoomIn'>
-            <pre class='display-4 align-self-center font-weight-bolder'>NonFrozen </pre>
+        <button onclick="window.location.href='{% url "NonFrozen:Home" %}';" class='d-flex justify-content-center flex-fill bg-light p-1 m-1 shadow btn animated zoomIn'>
+            <pre class='align-self-center font-weight-bolder' style='font-size:4vw;'>NonFrozen </pre>
         </button>
     </body>
 
